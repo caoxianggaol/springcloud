@@ -5,13 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by xiaogao on 2017/12/27.
+ * Created by xiaogao on 2017/12/28.
  */
 @RestController
 public class MovieController {
 
+
     @GetMapping("/movie/{id:\\d+}")
     public Movie findById() {
-        return new Movie(101,"西游记","六小龄童");
+        return new Movie(101,"大话西游","周星驰");
     }
 }

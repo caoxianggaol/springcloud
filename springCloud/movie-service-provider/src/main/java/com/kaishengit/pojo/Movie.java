@@ -1,16 +1,15 @@
 package com.kaishengit.pojo;
 
 /**
- * Created by xiaogao on 2017/12/27.
+ * Created by xiaogao on 2017/12/28.
  */
 public class Movie {
+
     private int id;
     private String name;
     private String actor;
 
-
     public Movie() {
-
     }
 
     public Movie(int id, String name, String actor) {

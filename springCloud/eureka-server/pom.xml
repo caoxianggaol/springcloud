@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.kaishengit</groupId>
-	<artifactId>movie-service-provider</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>movie-service-provider</name>
+	<name>eureka-server</name>
 	<description></description>
 
 	<parent>
@@ -26,13 +26,16 @@
 	</properties>
 
 	<dependencies>
+		<!--添加eureka-server依赖-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
+
+		<!--添加SpringSecurity依赖  做eureka登录时的认证-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 		<dependency>
